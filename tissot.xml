@@ -5,7 +5,7 @@
         name="github"
         fetch="https://github.com/" />
 
-    <!-- Xiaomi Mi A1 / Tissot Mainline -->
+    <!-- Xiaomi Mi A1 / Tissot Mainline Device Tree -->
     <project
         name="JBHPocong/lineage-os-tissot_mainline"
         path="device/xiaomi/mi89xx-mainline"
@@ -18,5 +18,12 @@
         path="kernel/mainline/msm8953-mainline"
         remote="github"
         revision="barni2000/7.1.3/develop" />
+
+    <!-- Xiaomi Mi A1 / Tissot Vendor -->
+    <project
+        name="plrine/proprietary_vendor_xiaomi_tissot"
+        path="vendor/xiaomi/tissot"
+        remote="github"
+        revision="lineage-23.2" />
 
 </manifest>
