@@ -40,15 +40,18 @@
         name="LineageOS/android_external_tinyhal"
         path="external/tinyhal"
         revision="lineage-23.2" />
-
-<project
+    <project
         name="LineageOS/android_hardware_sony_timekeep"
         path="hardware/sony/timekeep"
         revision="lineage-23.2" />
+    <project
+        name="LineageOS/android_hardware_xiaomi"
+        path="hardware/xiaomi"
+        revision="lineage-23.2" />
 
-<project
-    name="LineageOS/android_hardware_mainline_qcom"
-    path="hardware/mainline/qcom"
-    revision="lineage-23.2" />
+    <project
+        name="LineageOS/android_hardware_mainline_qcom"
+        path="hardware/mainline/qcom"
+        revision="lineage-23.2" />
 
 </manifest>
