@@ -46,6 +46,12 @@
         path="vendor/xiaomi/tissot"
         remote="tissot-github"
         revision="lineage-23.2" />
+    
+    <project
+        name="plrine/proprietary_vendor_xiaomi_msm8953-common"
+        path="vendor/xiaomi/msm8953-common"
+        remote="tissot-github"
+        revision="lineage-23.2" />
 
     <!-- ============================================================ -->
     <!-- MAINLINE DEVICE                                             -->
