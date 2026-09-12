@@ -11,81 +11,146 @@
         name="lineage"
         fetch="https://github.com/LineageOS" />
 
-    <!-- Tissot Mainline Device Tree -->
+    <!-- ============================================================ -->
+    <!-- TISSOT MAINLINE DEVICE                                      -->
+    <!-- ============================================================ -->
+
     <project
         name="android_device_xiaomi_mi89xx-mainline"
         path="device/xiaomi/mi89xx-mainline"
         remote="lineage"
         revision="lineage-23.2" />
 
-    <!-- MSM8953 Mainline Kernel -->
+    <!-- ============================================================ -->
+    <!-- MAINLINE KERNEL                                             -->
+    <!-- ============================================================ -->
+
     <project
         name="msm8953-mainline/linux"
         path="kernel/mainline/msm8953-mainline"
         remote="tissot-github"
         revision="barni2000/7.1.3/develop" />
 
-    <!-- Tissot Vendor -->
+    <project
+        name="android_kernel_mainline_configs"
+        path="kernel/mainline/configs"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <!-- ============================================================ -->
+    <!-- TISSOT VENDOR                                               -->
+    <!-- ============================================================ -->
+
     <project
         name="plrine/proprietary_vendor_xiaomi_tissot"
         path="vendor/xiaomi/tissot"
         remote="tissot-github"
         revision="lineage-23.2" />
 
-    <!-- Mainline QCOM Common -->
+    <!-- ============================================================ -->
+    <!-- MAINLINE DEVICE                                             -->
+    <!-- ============================================================ -->
+
     <project
         name="android_device_mainline_qcom-common"
         path="device/mainline/qcom-common"
         remote="lineage"
         revision="lineage-23.2" />
 
-    <!-- Mainline Common -->
     <project
         name="android_device_mainline_common"
         path="device/mainline/common"
         remote="lineage"
         revision="lineage-23.2" />
 
-    <!-- TinyHAL -->
-    <project
-        name="android_external_tinyhal"
-        path="external/tinyhal"
-        remote="lineage"
-        revision="lineage-23.2" />
+    <!-- ============================================================ -->
+    <!-- MAINLINE HARDWARE                                           -->
+    <!-- ============================================================ -->
 
-    <!-- Sony Timekeep -->
-    <project
-        name="android_hardware_sony_timekeep"
-        path="hardware/sony/timekeep"
-        remote="lineage"
-        revision="lineage-23.2" />
-
-    <!-- Xiaomi Hardware -->
-    <project
-        name="android_hardware_xiaomi"
-        path="hardware/xiaomi"
-        remote="lineage"
-        revision="lineage-23.2" />
-
-    <!-- Mainline QCOM Hardware -->
     <project
         name="android_hardware_mainline_qcom"
         path="hardware/mainline/qcom"
         remote="lineage"
         revision="lineage-23.2" />
 
-    <!-- lk2nd -->
     <project
-        name="msm8953-mainline/lk2nd"
-        path="bootloader/lk2nd"
-        remote="tissot-github"
-        revision="main" />
+        name="android_hardware_mainline_common"
+        path="hardware/mainline/common"
+        remote="lineage"
+        revision="lineage-23.2" />
 
-    <!-- ALSA UCM -->
+    <project
+        name="android_hardware_xiaomi"
+        path="hardware/xiaomi"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_hardware_sony_timekeep"
+        path="hardware/sony/timekeep"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_hardware_intel_sensors-iio"
+        path="hardware/intel/sensors-iio"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <!-- ============================================================ -->
+    <!-- MAINLINE EXTERNAL                                           -->
+    <!-- ============================================================ -->
+
+    <project
+        name="android_external_tinyhal"
+        path="external/tinyhal"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_external_lk2nd"
+        path="external/lk2nd"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_external_drm_hwcomposer-upstream"
+        path="external/drm_hwcomposer-upstream"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_external_minigbm-upstream"
+        path="external/minigbm-upstream"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_external_linux-firmware-mainline"
+        path="external/linux-firmware-mainline"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_external_mesa"
+        path="external/mesa"
+        remote="lineage"
+        revision="lineage-23.2" />
+
     <project
         name="msm8953-mainline/alsa-ucm-conf"
         path="external/alsa-ucm-conf-msm8953"
         remote="tissot-github"
         revision="master" />
+
+    <!-- ============================================================ -->
+    <!-- BOOTLOADER                                                  -->
+    <!-- ============================================================ -->
+
+    <project
+        name="msm8953-mainline/lk2nd"
+        path="bootloader/lk2nd"
+        remote="tissot-github"
+        revision="main" />
 
 </manifest>
