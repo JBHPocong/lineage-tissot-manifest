@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <!-- GitHub umum -->
-    <remote
-        name="tissot-github"
-        fetch="https://github.com" />
+    <!-- ============================================================ -->
+    <!-- REMOTES                                                      -->
+    <!-- ============================================================ -->
 
-    <!-- Official LineageOS -->
     <remote
         name="lineage"
         fetch="https://github.com/LineageOS" />
+
+    <remote
+        name="tissot-github"
+        fetch="https://github.com" />
 
     <!-- ============================================================ -->
     <!-- TISSOT MAINLINE DEVICE                                      -->
@@ -31,30 +33,8 @@
         remote="tissot-github"
         revision="barni2000/7.1.3/develop" />
 
-    <project
-        name="android_kernel_mainline_configs"
-        path="kernel/mainline/configs"
-        remote="lineage"
-        revision="lineage-23.2" />
-
     <!-- ============================================================ -->
-    <!-- TISSOT VENDOR                                               -->
-    <!-- ============================================================ -->
-
-    <project
-        name="plrine/proprietary_vendor_xiaomi_tissot"
-        path="vendor/xiaomi/tissot"
-        remote="tissot-github"
-        revision="lineage-23.2" />
-    
-    <project
-        name="plrine/proprietary_vendor_xiaomi_msm8953-common"
-        path="vendor/xiaomi/msm8953-common"
-        remote="tissot-github"
-        revision="lineage-23.2" />
-
-    <!-- ============================================================ -->
-    <!-- MAINLINE DEVICE                                             -->
+    <!-- DIRECT DEPENDENCIES                                         -->
     <!-- ============================================================ -->
 
     <project
@@ -64,30 +44,36 @@
         revision="lineage-23.2" />
 
     <project
+        name="android_external_lk2nd"
+        path="external/lk2nd"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_hardware_intel_sensors-iio"
+        path="hardware/intel/sensors-iio"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_kernel_mainline_configs"
+        path="kernel/mainline/configs"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <!-- ============================================================ -->
+    <!-- QCOM COMMON DEPENDENCIES                                    -->
+    <!-- ============================================================ -->
+
+    <project
         name="android_device_mainline_common"
         path="device/mainline/common"
         remote="lineage"
         revision="lineage-23.2" />
 
-    <!-- ============================================================ -->
-    <!-- MAINLINE HARDWARE                                           -->
-    <!-- ============================================================ -->
-
     <project
-        name="android_hardware_mainline_qcom"
-        path="hardware/mainline/qcom"
-        remote="lineage"
-        revision="lineage-23.2" />
-
-    <project
-        name="android_hardware_mainline_common"
-        path="hardware/mainline/common"
-        remote="lineage"
-        revision="lineage-23.2" />
-
-    <project
-        name="android_hardware_xiaomi"
-        path="hardware/xiaomi"
+        name="android_external_tinyhal"
+        path="external/tinyhal"
         remote="lineage"
         revision="lineage-23.2" />
 
@@ -98,26 +84,14 @@
         revision="lineage-23.2" />
 
     <project
-        name="android_hardware_intel_sensors-iio"
-        path="hardware/intel/sensors-iio"
+        name="android_hardware_mainline_qcom"
+        path="hardware/mainline/qcom"
         remote="lineage"
         revision="lineage-23.2" />
 
     <!-- ============================================================ -->
-    <!-- MAINLINE EXTERNAL                                           -->
+    <!-- MAINLINE COMMON DEPENDENCIES                                -->
     <!-- ============================================================ -->
-
-    <project
-        name="android_external_tinyhal"
-        path="external/tinyhal"
-        remote="lineage"
-        revision="lineage-23.2" />
-
-    <project
-        name="android_external_lk2nd"
-        path="external/lk2nd"
-        remote="lineage"
-        revision="lineage-23.2" />
 
     <project
         name="android_external_drm_hwcomposer-upstream"
@@ -144,10 +118,26 @@
         revision="lineage-23.2" />
 
     <project
-        name="msm8953-mainline/alsa-ucm-conf"
-        path="external/alsa-ucm-conf-msm8953"
-        remote="tissot-github"
-        revision="master" />
+        name="android_hardware_mainline_common"
+        path="hardware/mainline/common"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <!-- ============================================================ -->
+    <!-- TRANSITIVE DEPENDENCIES                                    -->
+    <!-- ============================================================ -->
+
+    <project
+        name="android_external_libdisplay-info-upstream"
+        path="external/libdisplay-info-upstream"
+        remote="lineage"
+        revision="lineage-23.2" />
+
+    <project
+        name="android_prebuilts_mesa-build-dep"
+        path="prebuilts/mesa-build-dep"
+        remote="lineage"
+        revision="lineage-23.2" />
 
     <!-- ============================================================ -->
     <!-- BOOTLOADER                                                  -->
