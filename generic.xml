@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Mainline Generic -->
+    <project
+        name="LineageOS/android_device_mainline_generic"
+        path="device/mainline/generic"
+        revision="lineage-23.2" />
+
+    <!-- Mainline Common -->
+    <project
+        name="LineageOS/android_device_mainline_common"
+        path="device/mainline/common"
+        revision="lineage-23.2" />
+
+    <!-- DRM HWComposer -->
+    <project
+        name="LineageOS/android_external_drm_hwcomposer-upstream"
+        path="external/drm_hwcomposer-upstream"
+        revision="lineage-23.2" />
+
+    <!-- libdisplay-info -->
+    <project
+        name="LineageOS/android_external_libdisplay-info-upstream"
+        path="external/libdisplay-info-upstream"
+        revision="lineage-23.2" />
+
+    <!-- MiniGBM -->
+    <project
+        name="LineageOS/android_external_minigbm-upstream"
+        path="external/minigbm-upstream"
+        revision="lineage-23.2" />
+
+    <!-- Mainline Linux Firmware -->
+    <project
+        name="LineageOS/android_external_linux-firmware-mainline"
+        path="external/linux-firmware-mainline"
+        revision="lineage-23.2" />
+
+    <!-- Mesa -->
+    <project
+        name="LineageOS/android_external_mesa"
+        path="external/mesa"
+        revision="lineage-23.2" />
+
+    <!-- Mesa Build Dependencies -->
+    <project
+        name="LineageOS/android_prebuilts_mesa-build-dep"
+        path="prebuilts/mesa-build-dep"
+        revision="lineage-23.2" />
+
+    <!-- Mainline Hardware Common -->
+    <project
+        name="LineageOS/android_hardware_mainline_common"
+        path="hardware/mainline/common"
+        revision="lineage-23.2" />
+
+    <!-- TinyHAL -->
+    <project
+        name="LineageOS/android_external_tinyhal"
+        path="external/tinyhal"
+        revision="lineage-23.2" />
+
+    <!-- Mainline Kernel Configs -->
+    <project
+        name="LineageOS/android_kernel_mainline_configs"
+        path="kernel/mainline/configs"
+        revision="lineage-23.2" />
+
+    <!-- Mainline Boot Manager -->
+    <project
+        name="LineageOS/android_prebuilts_bootmgr"
+        path="prebuilts/bootmgr"
+        revision="lineage-23.2" />
+
+</manifest>
