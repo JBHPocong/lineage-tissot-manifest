@@ -1,2 +1,2 @@
-# lineage-tissot-manifest
-mainline only mybe
+# lineage-tissot-manifest mainline
+# lineage-generic-manifest mainline 
