@@ -1,4 +1,4 @@
 # lineage-tissot-manifest mainline
- "only tissot mainline"
+ only tissot mainline
 # lineage-generic-manifest mainline 
- 'generic mainline'
+ generic mainline
