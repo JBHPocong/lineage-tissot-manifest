@@ -59,8 +59,6 @@
     <!-- FIX: REMOVE DUPLICATE kernel/mainline/configs                -->
     <!-- ============================================================ -->
 
-    <remove-project name="android_kernel_mainline_configs" />
-
     <project
         name="android_kernel_mainline_configs"
         path="kernel/mainline/configs"
