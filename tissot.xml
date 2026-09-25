@@ -13,6 +13,10 @@
         name="tissot-github"
         fetch="https://github.com" />
 
+    <remote
+        name="plrine"
+        fetch="https://github.com/plrine" />
+
     <!-- ============================================================ -->
     <!-- TISSOT MAINLINE DEVICE                                       -->
     <!-- ============================================================ -->
@@ -32,6 +36,22 @@
         path="kernel/mainline/msm8953-mainline"
         remote="tissot-github"
         revision="barni2000/7.1.3/develop" />
+
+    <!-- ============================================================ -->
+    <!-- VENDOR TREE (untuk firmware a506_zap.b00, dll)               -->
+    <!-- ============================================================ -->
+
+    <project
+        name="proprietary_vendor_xiaomi_msm8953-common"
+        path="vendor/xiaomi/msm8953-common"
+        remote="plrine"
+        revision="lineage-23.2" />
+
+    <project
+        name="proprietary_vendor_xiaomi_tissot"
+        path="vendor/xiaomi/tissot"
+        remote="plrine"
+        revision="lineage-23.2" />
 
     <!-- ============================================================ -->
     <!-- DIRECT DEPENDENCIES                                          -->
