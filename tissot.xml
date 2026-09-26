@@ -27,6 +27,12 @@
         remote="lineage"
         revision="lineage-23.2" />
 
+    <project
+        name="plrine/android_device_xiaomi_msm8953-common"
+        path="device/xiaomi/msm8953-common"
+        revision="lineage-23.2"
+        remote="tissot-github" />
+
     <!-- ============================================================ -->
     <!-- MAINLINE KERNEL                                              -->
     <!-- ============================================================ -->
