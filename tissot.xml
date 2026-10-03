@@ -30,16 +30,25 @@
     <!-- ============================================================ -->
 
     <!--
-        Kernel tidak lagi di-build dari source.
+        Kernel source:
+            DISABLED
 
-        Branch:
+        Prebuilt kernel:
             Image.gz-dtb
 
         Repository:
             JBHPocong/lineage-tissot-manifest
 
-        File yang dicari script:
+        Branch:
             Image.gz-dtb
+
+        Path:
+            prebuilts/kernel/tissot
+
+        Image.gz-dtb sudah mengandung:
+            Kernel + DTB
+
+        Jadi tidak menggunakan dtb.img terpisah.
     -->
 
     <project
@@ -86,6 +95,14 @@
     <!-- ============================================================ -->
     <!-- KERNEL MAINLINE CONFIGS                                     -->
     <!-- ============================================================ -->
+
+    <!--
+        Tetap dipertahankan.
+
+        Ini bukan kernel source.
+        Project ini berisi konfigurasi yang masih dapat diperlukan
+        oleh device/mainline.
+    -->
 
     <project
         name="android_kernel_mainline_configs"
