@@ -26,36 +26,14 @@
 
 
     <!-- ============================================================ -->
-    <!-- PREBUILT MAINLINE KERNEL                                    -->
+    <!-- MAINLINE KERNEL                                              -->
     <!-- ============================================================ -->
 
-    <!--
-        Kernel source:
-            DISABLED
-
-        Prebuilt kernel:
-            Image.gz-dtb
-
-        Repository:
-            JBHPocong/lineage-tissot-manifest
-
-        Branch:
-            Image.gz-dtb
-
-        Path:
-            prebuilts/kernel/tissot
-
-        Image.gz-dtb sudah mengandung:
-            Kernel + DTB
-
-        Jadi tidak menggunakan dtb.img terpisah.
-    -->
-
     <project
-        name="JBHPocong/lineage-tissot-manifest"
-        path="prebuilts/kernel/tissot"
+        name="msm8953-mainline/linux"
+        path="kernel/mainline/msm8953-mainline"
         remote="tissot-github"
-        revision="Image.gz-dtb" />
+        revision="barni2000/7.1.3/develop" />
 
 
     <!-- ============================================================ -->
@@ -95,14 +73,6 @@
     <!-- ============================================================ -->
     <!-- KERNEL MAINLINE CONFIGS                                     -->
     <!-- ============================================================ -->
-
-    <!--
-        Tetap dipertahankan.
-
-        Ini bukan kernel source.
-        Project ini berisi konfigurasi yang masih dapat diperlukan
-        oleh device/mainline.
-    -->
 
     <project
         name="android_kernel_mainline_configs"
